@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:scroll;
+}
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+  border: #f59d06 solid 1px;
+  border-radius: 5px;
+  min-height: 400px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 14px;
+  margin-right: 5px;
+  border: #c2c2c2 solid 1px;
+  border-radius: 5px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.num {
+  list-style: decimal;
+}
+
+ul {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-top: 1rem;
+  border: #c2c2c2 solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+p {
+    display: block;
+}
+
+button {
+  margin-left: 1rem;
+  background-color: black;
+  color: white;
+  pointer-events: stroke;
+  border: none;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    max-width: 400px;
+  }
+
+  h1 {
+    color: #191919;
+    font-size: 2rem;
+  }
+
+  input {
+    padding: 8px;
+    margin-right: 2px;
+  }
+
+  ul {
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 4px;
+    overflow: scroll;
+  }
+
+  button {
+    margin-left: 0.3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+    font-size: 0.7rem;
+  }
+}
